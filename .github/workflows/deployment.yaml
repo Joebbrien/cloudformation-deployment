@@ -39,6 +39,6 @@ jobs:
         uses: aws-actions/aws-cloudformation-github-deploy@v1
         with:
           name: first-test-stack
-          template: instances_deployment.yaml
+          template: instances_deployment.yml
           no-fail-on-empty-changeset: "1"
   
