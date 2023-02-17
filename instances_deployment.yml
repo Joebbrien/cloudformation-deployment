@@ -11,7 +11,7 @@ Resources:
       SecurityGroupIds:
         - !Ref WebAppSecurityGroup
       "Tags" : [
-            {"Key" : "Name", "Value" : "frontend-application"}]
+            {"Key" : "Name", "Value" : "frontend-application-demo"}]
   
   WebAppSecurityGroup:
     Type: AWS::EC2::SecurityGroup
