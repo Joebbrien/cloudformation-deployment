@@ -14,7 +14,6 @@ on:
         required: true
         default: 'us-east-1'
 
-
 jobs:
   # This workflow contains a single job called "deploy"
   DeployStage:
@@ -31,8 +30,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.ACCESS_KEYS }}
-          aws-secret-access-key: ${{ secrets.ACCESS_KEY_SECRET }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEYS }}
+          aws-secret-access-key: ${{ secrets.AWS_ACCESS_KEY_SECRET }}
           aws-region: us-east-1
 
       # Deploy to AWS CloudFormation
