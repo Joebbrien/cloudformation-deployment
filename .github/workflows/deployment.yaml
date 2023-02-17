@@ -1,4 +1,4 @@
-name: 'Deploy to AWS CloudFormation'
+name: 'EC2 Deployment'
 
 on: 
   push:
