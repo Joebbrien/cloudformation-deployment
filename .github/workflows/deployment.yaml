@@ -17,10 +17,11 @@ on:
 
 jobs:
   # This workflow contains a single job called "deploy"
-  deploy:
+  DeployStage:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
+    environment: stage
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code from master branch
@@ -41,4 +42,3 @@ jobs:
           name: first-test-stack
           template: instances_deployment.yml
           no-fail-on-empty-changeset: "1"
-  
